@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocal Pen</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="dynamic-heading">Vocal Pen</h1>
+    </header>
+    <main>
+        <div class="controls">
+            <button id="start-btn">Start</button>
+            <button id="capture-btn">Capture</button>
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="ml">Malayalam</option>
+                <option value="zh-CN">Chinese</option>
+                <option value="hi">Hindi</option>
+            </select>
+            <button id="upload-btn">Upload</button>
+            <button id="advanced-btn">Advanced Task</button>
+        </div>
+
+        <div class="layout">
+            <!-- Left Image -->
+            <div class="image-box">
+                <img src="/static/Gemini_Generated_Image_d6kezsd6kezsd6ke.jpeg" alt="Model Description 1">
+                <h3></h3>
+            </div>
+
+            <!-- Camera Feed -->
+            <div class="camera-feed">
+                <video id="camera-view" autoplay></video>
+            </div>
+
+            <!-- Right Image -->
+            <div class="image-box">
+                <img src="/static/v1.jpg" alt="Model Description 2">
+               
+            </div>
+        </div>
+
+        <div class="output-boxes">
+            <div class="output-box">
+                <h2>Detected Text</h2>
+                <textarea id="detected-text" readonly></textarea>
+            </div>
+            <div class="output-box">
+                <h2>Translated Text</h2>
+                <textarea id="translated-text" readonly></textarea>
+            </div>
+        </div>
+    </main>
+    <script src="/static/script.js"></script>
+    
+</body>
+</html>
